@@ -35,3 +35,11 @@ function unified_recipes.register_recipes(node_names, base_recipe)
   recipe['recipe'] = {node_names[#node_names]}
   minetest.register_craft(recipe)
 end
+
+function unified_recipes.add_to_group(node_names, group)
+  for k, v in pairs(node_names) do
+    if minetest.registered_nodes[v] ~= nil then
+      minetest.registered_nodes[v].groups[group] = 1
+    end
+  end
+end
