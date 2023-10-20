@@ -7,8 +7,8 @@ local base_recipe = {
   output = nil, -- filled by register_recipes
   recipe = {
     {'group:wood', 'group:wood', 'group:wood'},
-    {'', 'group:stick', ''},
-    {'', 'group:stick', ''},
+    {'group:stick', '', 'group:stick'},
+    {'group:stick', '', 'group:stick'},
   }
 
 }
